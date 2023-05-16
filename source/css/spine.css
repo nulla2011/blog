@@ -1,0 +1,8 @@
+.spine-widget {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  left: 0px;
+  bottom: 5px;
+  z-index: 999;
+}
