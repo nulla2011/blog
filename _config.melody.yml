@@ -4,10 +4,10 @@
 # ---------------
 theme_color:
   enable: true
-#   main: "#49B1F5"
-#   paginator: "#00C4B6"
-#   button_hover: "#FF7242"
-#   text_selection: "#00C4B6"
+  main: "#547191"
+  paginator: "#78DE84"
+  button_hover: "#8CBABE"
+  text_selection: "#8CBABE"
 #   link_color: "#858585"
 #   hr_color: "#A4D8FA"
 #   tag_start_color: "#A4D8FA"
@@ -143,9 +143,9 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar:
+avatar: https://gitcode.net/message2011/tttp/-/raw/master/asset/avatar.png
 
-top_img: https://gitcode.net/message2011/tttp/-/raw/master/background/bg.jpg # false or url of img
+top_img: https://gitcode.net/message2011/tttp/-/raw/master/asset/bg.jpg # false or url of img
 
 top_img_height: 57 # best range: 60 - 100
 

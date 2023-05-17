@@ -7,3 +7,9 @@
 #content-inner h2:hover {
   padding-left: 1.3rem;
 }
+#sidebar .sidebar-toc__progress {
+  color: #34c244;
+}
+#page-header .site-page::after {
+  background-color: rgb(58, 214, 214);
+}
