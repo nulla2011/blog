@@ -26,7 +26,7 @@ menu:
 
 # Favicon
 # ---------------
-favicon: /melody-favicon.ico
+favicon: /favicon.ico
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
@@ -132,14 +132,14 @@ scripts:
 # ---------------
 cdn:
   css:
-    fontawesome: https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css
-    fontawesomeV5: https://use.fontawesome.com/releases/v6.4.0/css/all.css
+    fontawesome: https://code.bdstatic.com/npm/font-awesome@4.7.0/css/font-awesome.min.css
+    fontawesomeV5: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
   js:
-    anime: https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js
-    jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-    fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js
-    velocity: https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js
-    velocity-ui: https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js
+    anime: https://code.bdstatic.com/npm/animejs@3.2.1/lib/anime.min.js
+    jquery: https://code.bdstatic.com/npm/jquery@3.6.0/dist/jquery.min.js
+    fancybox: https://code.bdstatic.com/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
+    velocity: https://code.bdstatic.com/npm/velocity-animate@1.5.2/velocity.min.js
+    velocity-ui: https://code.bdstatic.com/npm/velocity-ui-pack@1.2.2/velocity.ui.min.js
 
 # Post info settings
 # ---------------

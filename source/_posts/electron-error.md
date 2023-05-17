@@ -10,7 +10,7 @@ tags:
 
 <!-- more -->
 
-# 双向通信，主进程的错误消息传到渲染进程
+## 双向通信，主进程的错误消息传到渲染进程
 
 也就是 ipcRenderer.invoke 和 ipcMain.handle。
 
@@ -18,6 +18,6 @@ tags:
 
 举个例子：
 
-# 单向通信
+## 单向通信
 
 跟一般的通信一样，用 webContents.send 把错误送过去就可以了。

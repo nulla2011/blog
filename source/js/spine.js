@@ -32,22 +32,12 @@ class SpineModel {
     });
   }
   successCallback(w) {
-    // let ev = () => {
-    //   this.triggerEvents.forEach((i) => window.removeEventListener(i, ev));
-    //   this.initWidgetActions();
-    //   // this.initDragging();
-    //   this.widget.play();
-    //   this.widgetElement.style.display = 'block';
-    // };
     this.widget = w;
     this.initWidgetActions();
     this.initDragging();
     this.triggerEvents.forEach((i) =>
       window.addEventListener(i, this.changeIdleAnimation.bind(this))
     );
-    // this.widget.pause();
-    // this.widgetElement.style.display = 'none';
-    // this.triggerEvents.forEach((i) => window.addEventListener(i, ev));
   }
   initWidgetActions() {
     this.widget.canvas.onclick = this.interact.bind(this);

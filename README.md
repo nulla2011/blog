@@ -1,1 +1,1 @@
-新博客，旧博客（https://nulla2011.github.io）可能会在将来废弃。
+新博客，旧博客（ https://nulla2011.github.io ）可能会在将来废弃。

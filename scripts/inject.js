@@ -7,7 +7,7 @@ hexo.extend.injector.register('body_end', () => {
   if (enable) {
     return `
     <div class="spine-widget"></div>
-    <script src="https://cdn.jsdelivr.net/gh/EsotericSoftware/spine-runtimes@3.6.53/spine-ts/build/spine-widget.js"></script>
+    <script src="https://gcore.jsdelivr.net/gh/EsotericSoftware/spine-runtimes@3.6.53/spine-ts/build/spine-widget.js"></script>
     <script>
       new SpineModel({
         models: ${JSON.stringify(models)},
