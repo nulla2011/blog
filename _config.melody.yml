@@ -61,7 +61,7 @@ social:
   bilibili fab: https://space.bilibili.com/614917
   youtube fab: https://www.youtube.com/channel/UC8oZtp8ay0Omfl7VYOqOJFw
   github fab: https://github.com/nulla2011
-  telegram fab: https://t.me/nulla2011
+  # telegram fab: https://t.me/nulla2011
 
 # Algolia search
 # ---------------
@@ -279,7 +279,7 @@ disqus:
 # ---------------
 since: 2018
 
-# footer_custom_text: put custom text directly or put hitokoto to fetch random texts
+footer_custom_text: Background photoed by <a href="https://space.bilibili.com/679851">红袖添饭</a>
 
 ICP:
   enable: false
@@ -360,4 +360,4 @@ qihu_site_verification:
 disable_baidu_transformation: true
 
 # 404 Page SubTitle
-404Text:
+404Text: 404 没有找到

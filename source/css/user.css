@@ -1,5 +1,5 @@
 #site-social-icons {
-  width: 18rem;
+  width: 15rem;
 }
 #content-inner h2 {
   padding-left: 1.2rem;
@@ -11,5 +11,5 @@
   color: #34c244;
 }
 #page-header .site-page::after {
-  background-color: rgb(58, 214, 214);
+  background-color: rgb(152, 228, 228);
 }

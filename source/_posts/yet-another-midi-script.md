@@ -7,6 +7,6 @@ tags:
   - python
 ---
 
-自打去年开始用 cubase 就要被 cubase 的 midi 编辑气死了，不得已又准备写一个脚本来处理 midi，翻遍 npm 竟没找到一个能编辑 midi 的包。不得已又用回 python。
+自打去年开始用 cubase 就十分不满 cubase 的 midi 编辑，不得已又准备写一个脚本来处理 midi，翻遍 npm 竟没找到一个能编辑 midi 的包。不得已又用回 python。
 
 <!-- more -->
