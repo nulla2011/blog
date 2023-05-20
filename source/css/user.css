@@ -1,3 +1,4 @@
+@import url(https://code.bdstatic.com/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css);
 #site-social-icons {
   width: 15rem;
 }
@@ -7,9 +8,20 @@
 #content-inner h2:hover {
   padding-left: 1.3rem;
 }
+#content-inner h1 {
+  padding-left: 1.3rem;
+}
+#content-inner h1:hover {
+  padding-left: 1.4rem;
+}
 #sidebar .sidebar-toc__progress {
   color: #34c244;
 }
 #page-header .site-page::after {
   background-color: rgb(152, 228, 228);
+}
+.article-container pre .property::selection,
+.article-container pre br::selection {
+  background: rgba(113, 124, 180, 0.314);
+  color: #a6accd;
 }
