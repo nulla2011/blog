@@ -18,4 +18,12 @@ tags:
 
 ## spine 挂件
 
-参考了[这篇文章](https://c10udlnk.top/p/blogsFor-hexo-puttingLivelySpineModels/)
+因为之前一直在研究闪耀色彩解包，所以顺手拿过来几个 spine 模型，部署参考了[这篇文章](https://c10udlnk.top/p/blogsFor-hexo-puttingLivelySpineModels/)，重写了控制模型的代码（使用了 class，去掉了文本显示和语音），最后使用注入器初始化模型。放个 todo 在这里：改变模型大小
+
+## todo
+
+开放评论？
+
+---
+
+最后，之前的博客主题还是有点不舍的，想个办法在哪存档吧。
