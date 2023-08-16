@@ -133,7 +133,7 @@ scripts:
 cdn:
   css:
     fontawesome: https://code.bdstatic.com/npm/font-awesome@4.7.0/css/font-awesome.min.css
-    fontawesomeV5: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+    fontawesomeV5: https://cdnjs.onmicrosoft.cn/ajax/libs/font-awesome/6.4.0/css/all.min.css
   js:
     anime: https://code.bdstatic.com/npm/animejs@3.2.1/lib/anime.min.js
     jquery: https://code.bdstatic.com/npm/jquery@3.6.0/dist/jquery.min.js
