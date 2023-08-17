@@ -31,23 +31,29 @@ chrome 官方的替换文件功能，比如可以这样做 bb 素材：
 
 ![](https://img10.360buyimg.com/ddimg/jfs/t1/185887/23/36100/37825/64dc61d7F6ae070db/a053024cb7b06fd1.jpg)
 
-![](https://img10.360buyimg.com/ddimg/jfs/t1/167753/23/35969/18923/64dc625bF88db6200/92744f696fb0359e.jpg)
+![视频详情](https://img10.360buyimg.com/ddimg/jfs/t1/167753/23/35969/18923/64dc625bF88db6200/92744f696fb0359e.jpg)
 
-![](https://img10.360buyimg.com/ddimg/jfs/t1/112700/17/36535/12437/64dc6565F48f8a307/4fef1356779e3a85.jpg)
+![音频详情](https://img10.360buyimg.com/ddimg/jfs/t1/112700/17/36535/12437/64dc6565F48f8a307/4fef1356779e3a85.jpg)
+
+![事件](https://img14.360buyimg.com/ddimg/jfs/t1/197083/14/37559/59515/64ddc228F7ac01671/e6208646812c2eee.jpg)
+
+![消息](https://img11.360buyimg.com/ddimg/jfs/t1/160296/12/35395/66737/64ddc26aF5df3ee08/8217baaa39475872.jpg)
+
+![timeline](https://img14.360buyimg.com/ddimg/jfs/t1/173351/13/40403/11407/64ddc348F565b6dea/cabedcdf092c9ec7.jpg)
 
 # Animations
 
 记录动画，并可以显示速度曲线
 
-![](https://img14.360buyimg.com/ddimg/jfs/t1/127558/9/35678/25281/64dc788dFac3fdbe3/354fe69e89cf9113.jpg)
+![一般的 ease](https://img14.360buyimg.com/ddimg/jfs/t1/127558/9/35678/25281/64dc788dFac3fdbe3/354fe69e89cf9113.jpg)
 
-![](https://img12.360buyimg.com/ddimg/jfs/t1/131313/15/40558/34338/64dc77f4F321229fb/b1d62836ffa4e16e.jpg)
+![缓动函数如图](https://img12.360buyimg.com/ddimg/jfs/t1/131313/15/40558/34338/64dc77f4F321229fb/b1d62836ffa4e16e.jpg)
 
 # Changes
 
 对比在 devtools 里修改前和修改后的代码
 
-![](https://img12.360buyimg.com/ddimg/jfs/t1/210251/29/31923/25958/64dc6dddFc5aa1cee/8f0fcea6488bfa93.jpg)
+![在 Elements 改了一下 CSS](https://img12.360buyimg.com/ddimg/jfs/t1/210251/29/31923/25958/64dc6dddFc5aa1cee/8f0fcea6488bfa93.jpg)
 
 # Coverage
 
@@ -95,7 +101,7 @@ chrome 官方的替换文件功能，比如可以这样做 bb 素材：
 
 # Network conditions
 
-可以修改是否禁用 cache，限流策略，UA，可接受的内容编码
+可以修改是否禁用 cache，限流策略，UA，可接受的内容编码这些网络选项
 
 # Network request blocking
 
