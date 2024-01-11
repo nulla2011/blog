@@ -18,7 +18,7 @@ tags:
 
 参考 https://mirrors.ustc.edu.cn/help/crates.io-index.html ，在 `$CARGO_HOME/config` 中添加：
 
-```
+```toml
 [source.crates-io]
 replace-with = 'ustc'
 
@@ -47,3 +47,7 @@ wasm-bindgen 是 wasm 与 js 之间通信需要的模块。
 不要用 `cargo build` ，用 `wasm-pack build` ，这会生成 wasm 文件和与 js 交互的 js 文件。然后就能在 js 里引入了。
 
 **如果是给 nodejs 使用，记得把命令改成 `wasm-pack build --target nodejs` ，因为默认的 target 参数是 `web`，给浏览器用的。**
+
+# 参考
+
+- https://llever.com/rustwasm-book/
