@@ -22,7 +22,17 @@ tags:
 
 # Newtone
 
-# Fruity PanOMatic
+# PanOMatic
+
+# Stereo Shaper
+
+# Stereo Enhancer
+
+# Transient Processor
+
+# WaveShaper
+
+# Effector
 
 # Newtime
 
