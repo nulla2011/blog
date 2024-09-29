@@ -143,9 +143,9 @@ cdn:
 
 # Post info settings
 # ---------------
-avatar: https://gitcode.net/message2011/tttp/-/raw/master/asset/avatar.png
+avatar: https://img10.360buyimg.com/ddimg/jfs/t1/231793/2/27573/6887/66f923b5Fd87de03d/539f8c8491d14d20.jpg
 
-top_img: https://gitcode.net/message2011/tttp/-/raw/master/asset/bg.jpg # false or url of img
+top_img: https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw43373a6de8562a591344262256527b88.jpg # false or url of img
 
 top_img_height: 57 # best range: 60 - 100
 
