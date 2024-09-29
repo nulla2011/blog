@@ -15,7 +15,7 @@ tags:
 
 首先这个文件，扩展名是json，严格来说应该是jsonl文件，也就是每行都是一个json。让json文件看上去更舒服，你需要一个json格式化工具，比如[json.cn](https://www.json.cn/)还有[bejson.com](https://www.bejson.com/)。将json文件中的一行粘进去（复制多行可能会报错）然后点格式化，你就会发现被加了很多换行，看起来更方便了：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/shiraishi/t017164b59da73ba1d1.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw8accd93a1c1e87f051a29b61a9f01b99.png)
 
 <!-- more -->
 

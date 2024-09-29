@@ -7,7 +7,7 @@ tags:
 
 做音MAD时习惯性的会把使用到的素材归档，音频放一个文件夹视频放一个文件夹。我的音频素材归档文件夹画风是这样的：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t01f4ceb84bd2901f9e.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw85bb47fdd18cca330c631c5efc4fbf74.png)
 
 
 
@@ -21,11 +21,11 @@ tags:
 
 接下来说说这个困扰我好几年的问题是怎么解决的。首先我上网搜索了一番才知道这个叫ShellBags，是存在注册表里的`HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags`和`HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU`这两个键（MRU=Most Recently Used），就算是已经删除的文件夹的ShellBags也会被保存在注册表里。在`HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags`这个键里面找到AllFolders子键，然后在AllFolders里找到Shell子键，在Shell里新建一个字符串值并重命名为FolderType，双击之将数值数据改为NotSpecified，如图：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t0143547f6574c122a0.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw01db459f53bdf0c9244c0cfa02431474.png)
 
 这样所有文件夹，只要你没有改设置，就都是这样四列的详细信息视图了。
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t0169fd28dd46b87dc5.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwde368913f13681c0deaad7c4dd849939.png)
 
 我这总结了个懒人版，将代码保存成reg再双击导入就行了。
 

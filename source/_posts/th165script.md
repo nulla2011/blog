@@ -7,7 +7,7 @@ tags:
     - autohotkey
 ---
 
-![怎么动不了？？](https://gitcode.net/message2011/tttp/-/raw/master/sina/872e2401ly1fun4m0t80yg20ft0bz7wk.gif)
+![怎么动不了？？](https://pic7.58cdn.com.cn/nowater/webim/big/n_v299be782c6eaf4855a1aedb22ca9edf67.gif)
 
 众所周知th165秘封噩梦日记的瞬移操作十分反人类，需要松开方向键按两下shift。于是在两周前写了个脚本，脚本基于[autohotkey](https://autohotkey.com/)。
 <!-- more -->

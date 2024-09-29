@@ -10,7 +10,7 @@ English version is [here](https://nulla2011.github.io/2021/02/24/how-to-fix-LM-4
 
 [Steinberg LM-4 MarkII](https://www.steinberg.net/en/support/unsupported_products/lm4.html) 是Steinberg 出品的一个鼓音源，在东方project的音乐里被频繁使用，目前早已停产。东方的音乐里用的是Processed Studio Kits，每个kit都附带一个以fxp为扩展名的预设文件。但是，在载入预设时却出现了致命bug：
 
-![39143_cut.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/39143_cut.png)
+![39143_cut.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw1ca7dc13686cb62e237995eb8462aa40.png)
 
 <!-- more -->
 
@@ -18,13 +18,13 @@ English version is [here](https://nulla2011.github.io/2021/02/24/how-to-fix-LM-4
 
 虽然可以通过`import LM4/LM9 Script`来加载预设（见下图），但是还有个别的预设依然无法载入，本着刨根问底的精神，我决定一探究竟。
 
-![39368_cut.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/39368_cut.png)
+![39368_cut.png](https://img11.360buyimg.com/ddimg/jfs/t1/232502/25/25543/59813/66f9294cF897793f6/6312dcd6bf84736a.jpg)
 
 # 初步修复
 
 初步猜测是预设文件的问题，毕竟这是20年前的vst了，可能跟新版的fl有兼容问题。用16进制打开：
 
-![Screenshot_2021-02-21_125145.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_125145.png)
+![Screenshot_2021-02-21_125145.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwefed5cdc88f1e9938aa3b160e85ce99c.png)
 
 前面可能是相对路径，后面是一个不存在的路径，总之两者都没发挥作用。于是写了个python脚本批量修改成绝对路径。完整脚本：
 
@@ -132,9 +132,9 @@ if __name__ == "__main__":
 
 Github地址：https://github.com/nulla2011/fix-LM-4-MarkII/blob/master/fix_LM-4_fxp.py
 
-![Screenshot_2021-02-21_130308.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_130308.png)
+![Screenshot_2021-02-21_130308.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw70226b086ff7ec63b4c4925031b79fde.png)
 
-这样fl载入预设的时候就不会报错了。（cakewalk也不会报错，但是reaper却弹出了另一个报错提示：![39364.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/39364.png)
+这样fl载入预设的时候就不会报错了。（cakewalk也不会报错，但是reaper却弹出了另一个报错提示：![39364.png](https://img12.360buyimg.com/ddimg/jfs/t1/229754/7/21403/4962/66f92a12F2a39745d/e3d9036c23a33d2c.jpg)
 
 实在不知道这个 `opaque data` 指的文件中的哪部分内容，希望有懂fxp的人能提供一些解决这个问题的思路。）
 
@@ -146,23 +146,23 @@ Github地址：https://github.com/nulla2011/fix-LM-4-MarkII/blob/master/fix_LM-4
 
 初步观察，这个文件比其他文件大了一倍，分块跟其他文件比对了一下，发现里面提到的采样文件比其他预设多出很多，再仔细观察，采样大概是4个一组。
 
-![4samples.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/4samples.png)
+![4samples.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwbd945b9f9a03246a9c3a3c194782778c.png)
 
 用一个后面修改后成功加载的图，这里每个pad有3-4个采样，根据不同力度加载不同的采样。
 
-![Screenshot_2021-02-21_153057.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_153057.png)
+![Screenshot_2021-02-21_153057.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw35da292114fed65d8f3f0b6696c0bfa9.png)
 
 可是跑一遍上面的脚本，所有的路径已经修改完了，怎么还是加载不了采样呢？我用二分法不断尝试，终于找到了出问题的地方。
 
-![Screenshot_2021-02-21_141803.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_141803.png)
+![Screenshot_2021-02-21_141803.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwc560cd6193edb377d1a8cc4568f784db.png)
 
 首先我怀疑可能是名字里有星号导致的，可是换了名字并没有解决问题。然后我注意到了这个pad只包含三个采样，剩下的采样`R106 Rides 7.aif`哪去了呢？找到文件打开，发现是个无声的文件。于是我想到会不会是给这个采样留位置了但是没有写进预设里。找到其他三个采样定义力度范围的那两个字节，发现是从0~127完美连接上的，那么就不是少加采样的问题。后来我注意到了这个字节：
 
-![Screenshot_2021-02-21_143052.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_143052.png)
+![Screenshot_2021-02-21_143052.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw46d7852478dbf339e99c5753fdd7a7ca.png)
 
 `0x04`是不是代表有4个采样呢？看了一下前面，这里都是`0x04`，看了一下别的预设，这里是`0x01`。尝试将其改成`0x03`，果然没有报错了：
 
-![Screenshot_2021-02-21_150203.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_150203.png)
+![Screenshot_2021-02-21_150203.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw365d49677504b9fd1cfa8015125b8a51.png)
 
 然而后面却空出来了三个位置，woodblock的音色却是ride。缺少的音色除了woodblock以外，还有clap和cowbells，在预设里根本搜不到clap和cowbells，这又是怎么回事呢？从图上可以看出crash是在倒数第4的位置，而它本应该在最后一个。ride在crash前面，名字却是woodblock，它的本来的位置很可能在crash本应在的位置的前一个。那么我们可以做出这样的推断：
 
@@ -172,7 +172,7 @@ Github地址：https://github.com/nulla2011/fix-LM-4-MarkII/blob/master/fix_LM-4
 
 丢失的关键内容太多，要想修复只能靠脑补了。首先将没有问题的crash copy到最后；将woodblock copy一份到倒数第二的位置，改名成ride；给原先的woodblock替换并增加采样；再把两个空位填上cowbells和clap采样；最后参照其他的pad改一下每个采样的力度范围，对照[标准midi键盘对鼓的定义](https://www.midi.org/specifications-old/item/gm-level-1-sound-set)修改每个pad对应的键盘上的键，再改一些细节就可以了。
 
-![Screenshot_2021-02-21_162740.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_162740.png)
+![Screenshot_2021-02-21_162740.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw46d4f377a4654f043557f7745dfe606d.png)
 
 可是我试了很久，都没法在改好的预设里使用相对路径，不得已只好再写个脚本让各位根据自己的路径生成预设文件了，脚本如下：
 
@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
 这个脚本我也放在了[上面提到的仓库](https://github.com/nulla2011/fix-LM-4-MarkII)里。生成的预设文件在FL Studio 20.0.3、REAPER 6.01、Cakewalk中都通过了测试。哦旧预设文件在Cakewalk里都能加载啊，那没事了。
 
-![Screenshot_2021-02-21_163757.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-21_163757.png)
+![Screenshot_2021-02-21_163757.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwb3bbf078e6a289166b510027bcffb6a1.png)
 
 改好的预设仍有些遗憾之处，最不确定的几个地方是上图这三个pad的音量以及力度百分比，因为原文件内容的丢失永远也不知道设置的是什么值了。其他的基本没什么改动，照搬就是了。
 
@@ -247,7 +247,7 @@ if __name__ == "__main__":
 
 最后给出懒人版总结：运行第一个脚本，输入采样所在的文件夹（以`Processed Studio Kits`结尾），在**脚本的目录**下就会生成修改好的预设文件，但是`04 Reso Kit.fxp`这个文件还是不能用。运行第二个脚本，还是输入采样所在的文件夹，在**采样所在的目录**内就会生成修改后的Reso Kit预设。
 
-![Screenshot_2021-02-24_215105.png](https://gitcode.net/message2011/tttp/-/raw/master/LM-4/Screenshot_2021-02-24_215105.png)
+![Screenshot_2021-02-24_215105.png](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw12bb2998ae7e77337d24091c5413522e.png)
 
 ------
 

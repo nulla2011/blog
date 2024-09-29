@@ -20,7 +20,7 @@ tags:
 
 主进程的一个网络错误逐层被捕获抛出，最后到了 handler 这里：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/pic/74667.png)
+![](https://img10.360buyimg.com/ddimg/jfs/t1/185592/5/48925/12316/66f928b4Fd892181d/a4f87c0418ee7ad9.jpg)
 
 到了 handler 继续抛出
 
@@ -43,7 +43,7 @@ await window.api.getIdolInfo(id).catch((error) => {
 
 结果
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/pic/74670.png)
+![](https://img13.360buyimg.com/ddimg/jfs/t1/172945/25/47986/12789/66f9287cFfae67437/fcf8879d8d6ac8bd.jpg)
 
 再把前面的 invoke 错误截掉就可以了。
 

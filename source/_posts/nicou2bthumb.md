@@ -33,15 +33,15 @@ https://i.ytimg.com/vi/视频号（watch?v=后面的11位数字字母组合）/m
 
 nico的视频封面，必须从视频中选取。过去的flash版页面上有视频封面：
 
-![flash版页面上有封面](https://gitcode.net/message2011/tttp/-/raw/master/sina/872e2401ly1ftbu2qosyvj20gb040aak.jpg)
+![flash版页面上有封面](https://img13.360buyimg.com/ddimg/jfs/t1/15498/30/34655/15601/66f934a3F0e0c1b5d/4c3912e2e0741f48.jpg)
 
 可以复制图片地址，再在最后加一个`.L`
 
-![加入前](https://gitcode.net/message2011/tttp/-/raw/master/sina/872e2401ly1ftbu2xifd3j20f208nwf5.jpg)
+![加入前](https://img10.360buyimg.com/ddimg/jfs/t1/244980/38/20242/8218/66f934bbF76a30e2c/661045705ca0da5c.jpg)
 
 加入前
 
-![加入后](https://gitcode.net/message2011/tttp/-/raw/master/sina/872e2401ly1ftbu32utnvj20h509k77j.jpg)
+![加入后](https://img10.360buyimg.com/ddimg/jfs/t1/236582/23/26086/18336/66f934d2F6bc50ffb/9efa55f3e68b7fbf.jpg)
 
 加入后
 

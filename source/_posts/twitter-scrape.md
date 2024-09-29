@@ -11,7 +11,7 @@ tags:
 
 白石晴香的ご報告如下：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/shiraishi/t01d00967ea5e56c8e8.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw9c0afc0629d54d888a3ab565094f03e2.png)
 
 [原地址点我](https://twitter.com/shiraharu48/status/1212027679785938948)
 
@@ -163,7 +163,7 @@ f.close()
 
 中间省略了导入模块以及初始化各种key还有string的内容
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/shiraishi/t0145de27f6fc101ccd.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw4773b6e0a9ec44fb733c945871923356.png)
 
 抓取成功
 
@@ -205,7 +205,7 @@ with open(name+'_sorted.json','w') as fi:
 
 获取的推特文本都是被unicode编码过的无法读懂的字符串，如图
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/shiraishi/t017b1e6f845163d1a0.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw01f73d5ec4f40fea97e06cad6ace8af5.png)
 
 需要对其进行解码。首先考虑的是用python解，可是跑着跑着突然报错了。
 
@@ -215,7 +215,7 @@ UnicodeEncodeError: 'utf-8' codec can't encode characters in position 31295-3129
 
 经过对数据分段排查，发现竟然是一个小小的emoji的锅
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/shiraishi/t01c55d777056959d5f.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw2d563560ec73dcaa0195fa0410fdd74b.png)
 
 这个emoji，在文件里的编码是\ud83d\udc40，但是在python中无法识别。搜索了一下让python支持的方法，发现要想支持，python得是UCS-2编译的，而现在一般都是UCS-4编译，于是放弃，转用JS。
 

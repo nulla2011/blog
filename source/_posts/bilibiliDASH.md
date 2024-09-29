@@ -21,7 +21,7 @@ tags:
 
 B站自2019年2月开始启用了新的视频格式：DASH。DASH的全称是Dynamic Adaptive Streaming over HTTP，一种自适应比特率流媒体技术。在B站之前使用DASH的视频网站有youtube等。DASH的好处是媒体流每几秒切一片，方便根据网速实时切换，而且每个片段请求一次可以从容应对网络不稳定之类的问题。
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t01d3d5640afe0ce05a.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw711188151e425868d1ce466d72228251.png)
 
 每个片段都是相同的url
 
