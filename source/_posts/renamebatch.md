@@ -9,7 +9,7 @@ tags:
 
 不知道从什么时候开始，某盘下载文件时，如果文件名有空格，会使用+号填充：
 
-![下载文件](https://gitcode.net/message2011/tttp/-/raw/master/sina/872e2401ly1fustajy9rvj209z00zdfn.jpg)
+![下载文件](https://img10.360buyimg.com/ddimg/jfs/t1/235491/13/22976/4362/66f93807Fc95f83e1/b4a4b58903909a57.jpg)
 
 这对于强迫症来说，“我无法忍受你（下载工具？服务器？）的行为”，于是写了个简单的批处理来恢复原状：
 <!-- more -->

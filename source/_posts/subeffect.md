@@ -27,13 +27,13 @@ t7s 4th BD发售以后，群里好多人说要打轴，我正好借这这个机�
 
 截视频没有多大问题，可是在截取音频时出问题了。原因是pcm_bluray不能直接导出成wav，但试过aiff格式也不行，最后只好-acodec pcm_s24le导出。
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t018d81a576a9fca712.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwdd536f24194bbe506d417661aba5631a.png)
 
 ## 字幕打轴
 
 之前一直好奇这种单个音节的轴是怎么打的，后来稍微查了查才知道是卡拉ok字幕，把单句范围选好后点切换卡拉ok模式，然后分割每个音节，在频谱上拖动调整范围，就会自动生成带k值的字幕：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t01624c6c4abc017f62.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwd12e93879eace555169c3f61e1ab6275.png)
 
 这里k值单位为百分之一秒
 
@@ -83,13 +83,13 @@ t7s 4th BD发售以后，群里好多人说要打轴，我正好借这这个机�
 
 如果想在字幕中加上简单的图形，可以用aegisub自带的小工具assdraw，这里生成的都是类似于svg和ai的矢量图，简单几行代码就可以描述一个图形。这里做的图案参照了出现在MV和live大屏幕上的樱花图案。
 
-![MV](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t018bad9d7429c9141c.png)
+![MV](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw4f391286fb564a0ed9e2e13b0ea234c4.png)
 
-![视频源](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t0187cb65502fb97c3b.png)
+![视频源](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw64bb0fbb376bf52bafff495e3ed2b661.png)
 
 assdraw拉线得出代码后粘至aegisub。
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t018db7484e9b343734.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwbd4712f71c1435890046ab63bb45d8fa.png)
 
 ### 制作图案动画
 
@@ -107,13 +107,13 @@ assdraw拉线得出代码后粘至aegisub。
 
 自动化生成字幕以后可以直接在aegisub预览，建议还是拖进播放器预览一下，注意播放器也要挂载vsfiltermod。放上部分效果的预览：
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t014a6bcd487a00338d.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw17223e343b10dbc56c1dd282c2985bae.png)
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t0185816dfb8d272ebb.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw999b0c983e333a3dd0f38035f7ed7741.png)
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t014a72f08a60e0c6e0.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw4a342e7cf81b1be350f479661a2d5698.png)
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/subeffect/t011ef51ae51734e2f7.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw6fd47db0938535d91952bc773601595d.png)
 
 ## 压制
 

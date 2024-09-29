@@ -14,7 +14,7 @@ tags:
 ## 为什么要用fastcopy？
 最初知道fastcopy这软件，是因为我在文件复制中的一个发现：
 
-![explorer-copy](https://gitcode.net/message2011/tttp/-/raw/master/sina/872e2401ly1fpidcllqblj20na0hydgi.jpg)
+![explorer-copy](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw122335b909f44b9dadc75d945fab2c19.jpg)
 
 如图，使用资源管理器自带的复制功能，文件副本的创建时间就变成了复制时间。
 

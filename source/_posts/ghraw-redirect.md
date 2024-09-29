@@ -11,7 +11,7 @@ tags:
 
 首先使用浏览器插件Header Editer（[谷歌商店地址](https://chrome.google.com/webstore/detail/header-editor/eningockdidmgiojffjmkdblpjocbhgh)|[火狐插件地址](https://addons.mozilla.org/zh-CN/firefox/addon/header-editor/)|[官网](https://he.firefoxcn.net/)）
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t01eefe11bf6320f3dc.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw7203d9ce5afecf01c908dea9b5d9c436.png)
 
 
 
@@ -19,7 +19,7 @@ tags:
 
 
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t01f9797fce6f6ecf94.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHwd97bc56595bf2a37c9b7de39b51bb934.png)
 
 
 
@@ -62,7 +62,7 @@ https://cdn.jsdelivr.net/gh/$1/$2@$3/$4
 
 但是在GitHub里的预览（主要是图片）还是无法加载，原因是受到安全策略的限制，暂时还没有解决方法。
 
-![](https://gitcode.net/message2011/tttp/-/raw/master/qhold/t014c58d3c0913baaf8.png)
+![](https://b.bdstatic.com/comment/M8qbLULbBRwSkC8Rwi_qHw8b1d2a5b019e7a155fd8bc5a8ba0748e.png)
 
 
 
