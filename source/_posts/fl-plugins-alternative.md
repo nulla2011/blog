@@ -15,15 +15,23 @@ tags:
 
 # Gross Beat
 
+一个按序列控制音量和时间的插件。替代品首推 ShaperBox，除音量和时间外，还可以控制声像、混响、失真、滤波等，比 Gross Beat 能控制的要多很多
+
 # Soundfont Player
 
-以前只有 32 位版本的。Soundfont 播放器有很多，比如 sforzando，Juicysfplugin，都是免费的
+以前只有 32 位版本的。Soundfont 播放器有很多，比如 [sforzando](https://www.plogue.com/products/sforzando.html)，[Juicysfplugin](https://github.com/Birch-san/juicysfplugin)，都是免费的
 
 # Harmor
 
+合成器 + 采样器 + 粒子合成器。合成器就不说了，如果需要采样器 + 粒子合成器的话我推荐 Waves CR8 Sampler
+
 # Newtone
 
+修音用的，相信修音大家都在用别的软件，这里就不提了。
+
 # PanOMatic
+
+替代品首推 [Pancake](https://www.cableguys.com/pancake)，功能比它全还免费
 
 # Stereo Shaper
 
@@ -43,18 +51,23 @@ tags:
 
 # Directwave
 
-采样器兼 soundfont 播放器，可以用 TX16Wx 代替
+采样器兼 soundfont 播放器，可以用 [TX16Wx](https://www.tx16wx.com/) 代替
 
 # 3x Osc
 
-任何一个有三个震荡器的合成器
+可用任何一个有三个震荡器的合成器替代
 
 # Granulizer
 
 # FPC
+
+鼓机，这里推荐免费的 [Sitala](https://decomposer.de/sitala/)
 
 # Beepmap
 
 # Patcher
 
 # Soundgoodizer
+
+久 等 了
+不会还有人不知道 Soundgoodizer 就是 Maximus 的四个预设吧？所以你完全可以打开 Maximus 的预设把参数抄到自己用的多段压缩器上
