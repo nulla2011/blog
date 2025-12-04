@@ -1,15 +1,16 @@
 ---
-title: 讲讲 kläsch 的 mixin 模式
+title: 讲讲 klasch 的 mixin 模式
 date: 2022-05-14 10:43:31
 tags: 
   - JavaScript
+published: false
 ---
 
 去年就想写的文章现在才开始动笔。
 
 <!-- more -->
 
-经群友提醒才想起来 clash 还可以通过 mixin 自定义规则，点开设置一看 mixin 规则还可以用 javascript 写，那我就不困了啊。但是查了查并没有 javascript 写 mixin 规则的详细教程，官方文档也只是一笔带过，于是自己摸索了一下，在此记录一下 mixin 的用法。
+经群友提醒才想起来 klasch 还可以通过 mixin 自定义规则，点开设置一看 mixin 规则还可以用 javascript 写，那我就不困了啊。但是查了查并没有 javascript 写 mixin 规则的详细教程，官方文档也只是一笔带过，于是自己摸索了一下，在此记录一下 mixin 的用法。
 
 首先 mixin 脚本分 YAML 版和 JavaScript 版，这里主要讲 JavaScript 版，因为 JavaScript 脚本更加自由。从编辑按钮点进去，默认脚本是这样的：
 
@@ -77,9 +78,9 @@ let addRules = (domains, proxy, type) => {
 
 ## 将在线规则对应上节点分组
 
-说人话就是匹配规则的从这个分组走。clash 的一大特点就是可以将规则对应分组，切换分组里的节点不会影响其他网站。
+说人话就是匹配规则的从这个分组走。klasch 的一大特点就是可以将规则对应分组，切换分组里的节点不会影响其他网站。
 
-提到其他在线规则就不得不讲一下 profile 的预处理了。在 clash 的 settings → profiles → parsers ，点 edit 可以看到又是一个 yaml 。具体怎么配置我忘了，这里贴一下我的预处理文件，各位可以照着写。
+提到其他在线规则就不得不讲一下 profile 的预处理了。在 klasch 的 settings → profiles → parsers ，点 edit 可以看到又是一个 yaml 。具体怎么配置我忘了，这里贴一下我的预处理文件，各位可以照着写。
 
 ```yaml
 parsers: 

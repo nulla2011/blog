@@ -5,9 +5,11 @@ tags:
 	- GitHub
 ---
 
-最近GitHub的资源文件（raw.githubusercontent.com）经常出现无法访问的情况，想到之前有个GitHub的第三方cdn（https://www.jsdelivr.com/ ）于是我就想怎么把资源都重定向到这上面。以下是流程：
+此文章早已因为 Github 和浏览器的安全策略而失效
 
 <!-- more -->
+
+最近GitHub的资源文件（raw.githubusercontent.com）经常出现无法访问的情况，想到之前有个GitHub的第三方cdn（https://www.jsdelivr.com/ ）于是我就想怎么把资源都重定向到这上面。以下是流程：
 
 首先使用浏览器插件Header Editer（[谷歌商店地址](https://chrome.google.com/webstore/detail/header-editor/eningockdidmgiojffjmkdblpjocbhgh)|[火狐插件地址](https://addons.mozilla.org/zh-CN/firefox/addon/header-editor/)|[官网](https://he.firefoxcn.net/)）
 

@@ -13,11 +13,11 @@ type: "About"
 
 - 音MAD：~~心血来潮了会做一段，由于太耗时间只能慢慢填坑了，准备往编曲方向发展~~不做了
 
-- 东方：喜欢东方音乐，正在做东方风，目前主要做一些东方风arrange。偶尔玩玩STG。
+- 东方：喜欢东方音乐，喜欢做一些东方风的音乐
 
-- 偶像大师：~~游戏基本上已退坑~~ ~~基本只玩闪耀色彩了~~基本只玩 cgss 了，只听音乐看声优
+- 偶像大师：~~游戏基本上已退坑~~ ~~基本只玩闪耀色彩了~~ ~~基本只玩 cgss 了~~只听音乐看声优
 
-- 声优：岡咲美保，桑原由気，麻倉もも，立花日菜，菅野真衣，鈴木愛奈
+- 声优：岡咲美保，菅野真衣，小森結梨，飯田ヒカル
 
 - 铁路：对京津地区的地铁和国铁比较熟悉，了解几大都市圈的铁路走向，对铁路音mad兴趣一般
 
@@ -31,6 +31,7 @@ type: "About"
 - [bilibili](https://space.bilibili.com/614917)
 - [niconico](http://www.nicovideo.jp/user/30043882)
 - [youtube](https://www.youtube.com/channel/UC8oZtp8ay0Omfl7VYOqOJFw)
+- [soundcloud](https://soundcloud.com/nulla2011)
 
 
 ## 友情链接
