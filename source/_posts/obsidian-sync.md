@@ -12,20 +12,20 @@ tags:
 # 内网 WebDAV
 
 首先想到的而且是我最常用的方法就是 WebDAV，所以现在要在电脑里开一个 WebDAV 服务器（当然也可以在 NAS 中开一个并作为常驻进程），之前一直喜欢用 [@masx200/webdav-cli](https://www.npmjs.com/package/@masx200/webdav-cli) ，这次改用了 [wsgidav](https://github.com/mar10/wsgidav) ，首先我们使用 pipx 或 uv 或 pip 安装 wsgidav：
-```
+```shell
 pipx install wsgidav
 pipx inject wsgidav cheroot
 ```
-```
+```shell
 uv tool install wsgidav
 uv tool run --with cheroot wsgidav
 ```
-```
+```shell
 pip install wsgidav cheroot
 ```
 
 编写配置文件，主要是 ip 端口，账号密码等。
-```
+```yaml
 host: 192.168.123.70
 port: 1900
 simple_dc:
@@ -35,7 +35,7 @@ simple_dc:
         password: ""
 ```
 运行 wsgidav
-```
+```shell
 wsgidav --config=wsgidav.yaml --root=.webdav
 ```
 在 Obsidian 中我们主要使用 `Remotely Save` 插件来连接 webdav，在插件里设置好地址，用户名和密码。
